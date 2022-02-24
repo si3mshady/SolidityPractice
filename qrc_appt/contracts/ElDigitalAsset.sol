@@ -26,5 +26,4 @@ contract ElDigitalAsset is ERC721URIStorage {
         return newItemId;
     }
 }
-This is a pretty straightforward NFT smart contract that allows users to mint unique digital assets and have ownership of them.
 

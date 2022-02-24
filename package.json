@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@faker-js/faker": "^6.0.0-alpha.7",
+    "easyqrcodejs-nodejs": "^4.4.3",
+    "glob": "^7.2.0",
+    "ipfs-http-client": "^50.1.2",
+    "qrcode": "^1.5.0"
+  }
+}

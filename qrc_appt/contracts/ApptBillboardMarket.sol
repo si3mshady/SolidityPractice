@@ -13,6 +13,7 @@ contract ElliottArnoldTestMarket is ReentrancyGuard {
         Appointment[] public appointmentList;
 
         mapping(uint256 => Appointment) public idToAppointmentMapping;
+
         string[]  private appointmentsURI =  [
                 "https://ipfs.infura.io/ipfs/QmPnRz8ickrt4CwuhdfyxBDQQJ88QBPQAmxZESgAde4h5M",
                 "https://ipfs.infura.io/ipfs/;QmWQWYejvZYooaRCSSmHpDBiG1ddPEbogT5mJ9vf16gMeT",
@@ -24,10 +25,8 @@ contract ElliottArnoldTestMarket is ReentrancyGuard {
       function init()  private {
                for (uint256 i = 0; i < 3; i++) {
                 idToAppointmentMapping[i]  =  
-                     Appointment({ uri:  appointmentsURI[i], scheduled: false
-                }
-                );    
-                
+                     Appointment({ uri:  appointmentsURI[i], scheduled: false } );    
+
                 appointmentList.push( idToAppointmentMapping[i] );                                             
       }
 }

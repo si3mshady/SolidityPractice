@@ -2,6 +2,7 @@
 
 .secret
 *png
+../*png
 
 # dependencies
 /node_modules

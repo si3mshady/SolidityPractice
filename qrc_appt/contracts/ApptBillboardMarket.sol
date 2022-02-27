@@ -7,18 +7,19 @@ import "@openzeppelin/contracts/token/ERC721/ERC721.sol";
 contract ElliottArnoldTestMarket is ReentrancyGuard {
 
         using Counters for Counters.Counter;
-        // Counters.Counter private _appointmentId;
+        Counters.Counter private _appointmentId;
         Counters.Counter private _appointmentsTaken;
         uint256 private initialArrayLength = 3;
         
         Appointment[] private appointmentList;
-        // Appointment[] private nonScheduledAppt;
+        Appointment[] private nonScheduledAppt;
         Appointment[] private scheduledAppt;
         // Appointment[] private myAppts;
 
         struct Appointment { uint256 id; string uri;  bool scheduled; address patient; }
         mapping(uint256 => Appointment) public idToAppointmentMapping;
         mapping(address => Appointment) public addressToAppointmentMapping;
+        mapping(address => Appointment) public addressTo_Id_AppointmentMapping;
 
         string[]  private appointmentsURI =  [
                 "https://ipfs.infura.io/ipfs/QmPnRz8ickrt4CwuhdfyxBDQQJ88QBPQAmxZESgAde4h5M",
@@ -79,9 +80,10 @@ contract ElliottArnoldTestMarket is ReentrancyGuard {
         function scheduleAppointment( uint256 id, address patientAddress) public {
 
                 
+                
                 idToAppointmentMapping[id].scheduled = true;
                 idToAppointmentMapping[id].patient = patientAddress;
-                addressToAppointmentMapping[patientAddress].patient = patientAddress;
+                addressTo_Id_AppointmentMapping[patientAddress] = idToAppointmentMapping[id];
 
                 _appointmentsTaken.increment();               
 
@@ -91,22 +93,31 @@ contract ElliottArnoldTestMarket is ReentrancyGuard {
 
 
 
-          function viewMyScheduleAppointment() public  view returns ( Appointment[] memory ) {
-                
+        function unScheduleAppointment( uint256 id) public {
 
-                
-                // Create a count of this 
-                //Need to create a new array in the function that will hold users appts using the count of appts scheduled by user
-                // return the array 
+                _appointmentsTaken.decrement();   
+                idToAppointmentMapping[id].scheduled = false;
+                idToAppointmentMapping[id].patient = address(0);           
+
+
+        }
+
+
+
+
+
+
+
+
+          function viewMyScheduleAppointment() public  view returns ( Appointment[] memory ) {                
 
                 uint myApptsCount = 0;
 
                 // Iterate through array of all appts and check for those which match patient (address) attribute
 
                 for (uint256 i = 0; i < initialArrayLength; i++) {
-                        if (idToAppointmentMapping[i].patient == msg.sender) {
-                                
-                                // Create a count of this 
+                        if (idToAppointmentMapping[i].patient == msg.sender) {                                
+                                // Create a local count of appointments made by the seller 
                                 myApptsCount ++;
                                 
 
@@ -114,7 +125,7 @@ contract ElliottArnoldTestMarket is ReentrancyGuard {
 
                 }
 
-
+                //Need to create a new array in the function that will hold users appts using the count of appts scheduled by user
                 Appointment[] memory myAppts = new Appointment[](myApptsCount);
 
 
@@ -122,7 +133,7 @@ contract ElliottArnoldTestMarket is ReentrancyGuard {
                 for (uint256 i = 0; i < initialArrayLength; i++) {
                         if (idToAppointmentMapping[i].patient == msg.sender) {
 
-                                // push method is not avail for in memory arrays only storage 
+                                // push method is not avail for in memory arrays only storage arrays 
                                 myAppts[i] = idToAppointmentMapping[i];
 
                         }

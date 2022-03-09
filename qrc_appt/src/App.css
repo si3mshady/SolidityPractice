@@ -5,3 +5,6 @@ body {
 }
 
 
+.mainContent {
+    display: flex;
+}

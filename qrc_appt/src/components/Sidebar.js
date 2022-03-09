@@ -14,6 +14,21 @@ export default function Sidebar() {
             <FaLayerGroup/>
             <FaLayerGroup/>
             <FaLayerGroup/>
+            <FaLayerGroup/>  
+             <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>   <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>
+            <FaLayerGroup/>
             <FaLayerGroup/>
             <FaLayerGroup/>
             

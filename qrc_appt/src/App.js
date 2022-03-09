@@ -2,15 +2,16 @@
 import './App.css';
 import Navbar from './components/Navbar'
 import Sidebar from './components/Sidebar'
-
+import Mainframe from './components/Mainframe'
 
 function App() {
   return (
     <>
     <Navbar />
 
-    <div>
+    <div className="mainContent">
        <Sidebar />
+       <Mainframe />
 
     </div>
   

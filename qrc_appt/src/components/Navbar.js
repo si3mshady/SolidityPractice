@@ -11,7 +11,6 @@ export default function Navbar() {
                 <FaEthereum style={{fontSize: "50px", color: "#2d2db1"}}/>
 
                 <form >
-
                         <input className="search-field" placeholder="Search NFT Appts"/> 
                         <button className="search-button">
                             <i>  <FaSearchengin style={{fontSize: "190%"}}/> </i> 

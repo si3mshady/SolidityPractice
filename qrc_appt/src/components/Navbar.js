@@ -10,12 +10,12 @@ export default function Navbar() {
             {/* <div className="navbar_elements"> */}
 
                
-                <FaEthereum style={{fontSize: "50px"}}/>
+                <FaEthereum style={{fontSize: "50px", color: "#2d2db1"}}/>
 
                 <form >
 
-                        <input className="search-field" placeholder="NFT Search"/> 
-                        <button >
+                        <input className="search-field" placeholder="Search NFT Appts"/> 
+                        <button className="search-button">
                             <FaSearchengin style={{fontSize: "190%"}}/>
                         </button>
 

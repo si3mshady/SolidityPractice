@@ -6,9 +6,15 @@
     align-items: center;
     position: relative;
     height: 14vh;
-    background-color: silver;
+    /* background-color: silver; */
+    /* background: rgb(2,0,36); */
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,45,177,1) 35%, rgba(0,212,255,1) 100%);
     justify-content: space-between;
 }
+
+/* https://cssgradient.io/ */
+
+
 
 .navbar_elements {
     width: 20%;
@@ -41,7 +47,8 @@ form > button > img {
 
 form > input {
     border-width: 1px;
-    padding: 10px 35px 10px 15px;
+    /* padding: 10px 35px 10px 15px; */
+    padding: 3vh;
     border: none;
     border-radius: 100px;
     outline: none;
@@ -54,5 +61,18 @@ form > button  {
 
     font-size: 10px;
    
+}
+
+.navbar > button {
+    background-color: #04AA6D;
+    border: none;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 100px;
 }
 

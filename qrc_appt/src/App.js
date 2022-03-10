@@ -7,12 +7,13 @@ import Mainframe from './components/Mainframe'
 function App() {
   return (
     <>
+   
     <Navbar />
-
     <div className="mainContent">
+  
        <Sidebar />
        <Mainframe />
-
+       <Sidebar />
     </div>
   
 

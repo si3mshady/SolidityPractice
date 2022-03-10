@@ -1,11 +1,16 @@
 .container {
 
 
-    /* width: 200vh; */
-    /* height: 100vh; */
-
+    /* position: absolute; */
+ 
+    margin: 30px;
+    /* width: 100%; */
+    height: calc( 100vh - 30px);
+    /* max-height: 55vh; */
+    margin-top: 80px;
     background-color: green;
-    flex-grow: 3;
-
+    flex: .8;
+    border-radius: 30px;
+    padding:10px;
 
 }

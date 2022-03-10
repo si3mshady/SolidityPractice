@@ -1,5 +1,5 @@
 import React from 'react'
-import {FaLayerGroup} from 'react-icons/fa'
+import {FaRegUser} from 'react-icons/fa'
 import './Sidebar.css'
 
 
@@ -8,29 +8,9 @@ export default function Sidebar() {
 
         <aside>
 
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>  
-             <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>   <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
-            <FaLayerGroup/>
+            <FaRegUser/>
+        
+            
             
         </aside>
     )

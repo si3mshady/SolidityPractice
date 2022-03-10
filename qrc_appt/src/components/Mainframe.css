@@ -2,15 +2,19 @@
 
 
     /* position: absolute; */
- 
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-evenly;
+   
     margin: 30px;
     /* width: 100%; */
     height: calc( 100vh - 30px);
     /* max-height: 55vh; */
     margin-top: 80px;
-    background-color: green;
+    background-color:white;
     flex: .8;
-    border-radius: 30px;
+    border-radius: 50px;
     padding:10px;
 
 }

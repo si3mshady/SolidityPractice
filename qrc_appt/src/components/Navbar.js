@@ -13,7 +13,7 @@ export default function Navbar() {
                 <form >
                         <input className="search-field" placeholder="Search NFT Appts"/> 
                         <button className="search-button">
-                            <i>  <FaSearchengin style={{fontSize: "190%"}}/> </i> 
+                            <img src={magnifying_glass}/> 
                         </button>
 
                 </form>

@@ -1,22 +1,37 @@
 aside {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: calc( 100vh - 0px);
+ 
     justify-content: space-around;
     /* margin-top: 30px; */
-    width: 25vh;
+    /* width: 25vh; */
     background-color: whitesmoke;
     align-items: center;
-    overflow-y: auto;
+    /* overflow-y: auto; */
+    position: relative;
+    min-width: 8%;
+    
 
 
     /* width: 150px; */
     /* overflow-y: scroll; */
     top: 0;
     bottom: 0;
-    flex: .2;
+    flex: .05;
     z-index: 1;
     position: relative;
     cursor: pointer;
     /* border-right: 4px solid black; */
+    
+}
+
+.group {
+    
+    position: absolute;
+    font-size: 3rem;
+    display: flex;
+    flex-direction: column;
+    left: 19%;
+    
 }

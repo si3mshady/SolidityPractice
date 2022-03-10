@@ -13,7 +13,7 @@ function App() {
   
        <Sidebar />
        <Mainframe />
-       <Sidebar />
+       {/* <Sidebar /> */}
     </div>
   
 

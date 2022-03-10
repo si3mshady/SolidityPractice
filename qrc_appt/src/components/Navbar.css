@@ -14,8 +14,8 @@
     overflow: hidden;
     top: 0;
     z-index: 8;
-  border-bottom: .5px solid grey;
-  box-shadow: 10px 5px 5px whitesmoke;
+    border-bottom: .5px solid grey;
+    box-shadow: 10px 5px 5px whitesmoke;
 
 }
 

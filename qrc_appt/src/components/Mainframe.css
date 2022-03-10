@@ -6,8 +6,7 @@
     flex-wrap: wrap;
     width: 100%;
     justify-content: space-evenly;
-   
-    margin: 30px;
+       margin: 30px;
     /* width: 100%; */
     height: calc( 100vh - 30px);
     /* max-height: 55vh; */

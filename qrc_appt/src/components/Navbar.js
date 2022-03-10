@@ -10,6 +10,8 @@ export default function Navbar() {
                            
                 <FaEthereum style={{fontSize: "50px", color: "#2d2db1"}}/>
 
+                <div className="navbar_form">
+
                 <form >
                         <input className="search-field" placeholder="Search NFT Appts"/> 
                         <button className="search-button">
@@ -17,6 +19,9 @@ export default function Navbar() {
                         </button>
 
                 </form>
+
+                </div>
+             
                
             <a >Connect Wallet</a>
         </div>

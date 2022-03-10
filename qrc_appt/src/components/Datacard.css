@@ -1,3 +1,52 @@
-img {
-    padding: 10px;
+@import url('https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Rowdies:wght@300&display=swap');
+
+
+.dataCard {
+    display: flex;
+    position: relative;
+  
+   
+    /* flex-direction: colmun; */
+    /* align-items: center; */
 }
+
+
+.dataCard_Container > div >  img {
+    
+    flex-direction: column;
+    margin: 20px;
+    height: 150px;
+    
+}
+
+
+
+.dataCard_Container > button {
+    
+   position: absolute;
+   left: 56px;
+    bottom: -5px;
+
+
+
+    
+;
+    
+}
+
+.dataCard_Container_button {
+  position: absolute;
+}
+
+
+.button_green {
+    font-family: 'Permanent Marker', cursive;
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+  }

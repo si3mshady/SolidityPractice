@@ -1,7 +1,10 @@
 aside {
     display: flex;
     flex-direction: column;
-    height: calc( 100vh - 0px);
+    height: 100%;
+    position: fixed;
+    z-index: 11;
+    /* min-height: calc( 100vh - 0px); */
  
     justify-content: space-around;
     /* margin-top: 30px; */
@@ -9,18 +12,18 @@ aside {
     background-color: whitesmoke;
     align-items: center;
     /* overflow-y: auto; */
-    position: relative;
+    
     min-width: 8%;
     
 
-
+    overflow-x: hidden; 
     /* width: 150px; */
     /* overflow-y: scroll; */
     top: 0;
-    bottom: 0;
+    left: 0;
     flex: .05;
     z-index: 1;
-    position: relative;
+    /* position: relative; */
     cursor: pointer;
     /* border-right: 4px solid black; */
     
@@ -33,5 +36,6 @@ aside {
     display: flex;
     flex-direction: column;
     left: 19%;
+    height: auto;
     
 }

@@ -2,12 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-
+import {ChainProvider} from './context/chainContext'
 
 ReactDOM.render(
-  <React.StrictMode>
+  <ChainProvider>
+
+<React.StrictMode>
     <App />
-  </React.StrictMode>,
+  </React.StrictMode>
+  </ChainProvider>
+ ,
   document.getElementById('root')
 );
 

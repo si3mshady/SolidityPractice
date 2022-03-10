@@ -40,6 +40,7 @@
 
 
 .button_green {
+    /* background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%); */
     font-family: 'Permanent Marker', cursive;
     background-color: #4CAF50; /* Green */
     border: none;
@@ -49,4 +50,20 @@
     text-decoration: none;
     display: inline-block;
     cursor: pointer;
+
+
+ text-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+  box-shadow: 0 0 20px;
+  }
+
+  button:hover {
+    background-image: linear-gradient(to right, #84fab0 0%, #8fd3f4 51%, #84fab0 100%); 
+    transform: scale(.8);
+    color: orange;
+   
+  }
+
+  img:hover {
+      transform: scale(.9);
+      /* transition-delay: .5s; */
   }
